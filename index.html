@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+ <title>PISCES CAFé | Survey Form</title>
+</head>
+<body>
+ <header class="background">
+  <img id="logo" src="./images/Pisces Cafe Logo.png" alt="Pisces Cafe Logo">
+ </header>
+ <main>
+    <h1 id="title">Coffee feedback form</h1>
+    <p id="description">Thank you for taking the time to help us improve our coffee drink.</p>
+    <hr>
+  <form action="">
+   <div class="form-group">
+    <p id="question">Personal Information</p>
+    <label class="info" id="name-label" for="name">Name: </label>
+    <input required type="text" id="name" placeholder="Enter your Name" class="form-control" />
+   </div>
+   <div class="form-group">
+    <label class="info" id="email-label" for="email">Email: </label>
+    <input required type="email" id="email" placeholder="Enter your Email" class="form-control" />
+   </div>
+   <div class="form-group">
+    <label class="info" id="number-label" for="number">Age <span>(optional)</span>: </label>
+    <input min="16" max="120" type="number" id="number" class="form-control" placeholder="Enter your Age" />
+   </div>
+  <hr>
+   <div class="form-group">
+    <p id="question">What is your favorite time to drink coffee?</p>
+    <select required class="form-control" name="role" id="dropdown">
+     <option disabled selected value>(select one)</option>
+     <option value="breakfast">Before or After Breakfast</option>
+     <option value="morning">Mid-to-Late Morning</option>
+     <option value="lunch">Before or After Lunch</option>
+     <option value="workout">Before or After Workout</option>
+     <option value="afternoon">Mid-to-Late Afternoon</option>
+     <option value="dinner">Before or After Dinner</option>
+     <option value="bed">Before going to Bed</option>
+    </select>
+   </div>
+  <hr>
+   <div class="form-group">
+    <p id="question">Would you recommend our Coffee drinks to your friends?</p>
+    <div>
+     <label>
+      <input type="radio" name="user-recommend" value="definitely" class="input-radio" checked /> Definitely
+     </label>
+    </div>
+    <div>
+     <label>
+      <input type="radio" name="user-recommend" value="maybe" class="input-radio" /> Maybe
+     </label>
+    </div>
+    <div>
+     <label>
+      <input type="radio" name="user-recommend" value="never" class="input-radio" /> Never
+     </label>
+    </div>
+   </div>
+  <hr>
+   <div class="form-group row">
+    <p id="question">What is your favorite Coffee flavour? <br><span>(Check all that apply)</span></p>
+    <label class="checkbox column" for="espresso">
+      <input class="input" type="checkbox" name="espresso" id="espresso">
+      <div class="box"></div>
+      Espresso
+    </label>
+    <label class="checkbox column" for="americano">
+      <input class="input" type="checkbox" name="americano" id="americano">
+      <div class="box"></div>
+      Americano (American)
+    </label>
+    <label class="checkbox column" for="blackcoffee">
+      <input class="input" type="checkbox" name="blackcoffee" id="blackcoffee">
+      <div class="box"></div>
+      Black Coffee
+    </label>
+    <label class="checkbox column" for="cappuccino">
+      <input class="input" type="checkbox" name="cappuccino" id="cappuccino">
+      <div class="box"></div>
+      Cappuccino
+    </label>
+    <label class="checkbox column" for="drycappuccino">
+      <input class="input" type="checkbox" name="drycappuccino" id="drycappuccino">
+      <div class="box"></div>
+      Dry Cappuccino
+    </label>
+    <label class="checkbox column" for="flavoredcoffee">
+      <input class="input" type="checkbox" name="flavoredcoffee" id="flavoredcoffee">
+      <div class="box"></div>
+      Flavored Coffee
+    </label>
+    <label class="checkbox column" for="whitecoffee">
+      <input class="input" type="checkbox" name="whitecoffee" id="whitecoffee">
+      <div class="box"></div>
+      White Coffee
+    </label>
+    <label class="checkbox column" for="cafelatte">
+      <input class="input" type="checkbox" name="cafelatte" id="cafelatte">
+      <div class="box"></div>
+      Cafe Latte
+    </label>
+    <label class="checkbox column" for="cafeaulait">
+      <input class="input" type="checkbox" name="cafeaulait" id="cafeaulait">
+      <div class="box"></div>
+      Cafe au Lait
+    </label>
+    <label class="checkbox column" for="cafebreva">
+      <input class="input" type="checkbox" name="cafebreva" id="cafebreva">
+      <div class="box"></div>
+      Cafe Breva
+    </label>
+    <label class="checkbox column" for="cafemacchiato">
+      <input class="input" type="checkbox" name="cafemacchiato" id="cafemacchiato">
+      <div class="box"></div>
+      Cafe Macchiato
+    </label>
+    <label class="checkbox column" for="cafemocha">
+      <input class="input" type="checkbox" name="cafemocha" id="cafemocha">
+      <div class="box"></div>
+      Cafe Mocha
+    </label>
+    <label class="checkbox column" for="espressoconpanna">
+      <input class="input" type="checkbox" name="espressoconpanna" id="espressoconpanna">
+      <div class="box"></div>
+      Espresso con Panna
+    </label>
+    <label class="checkbox column" for="espressogranita">
+      <input class="input" type="checkbox" name="espressogranita" id="espressogranita">
+      <div class="box"></div>
+      Espresso Granita
+    </label>
+    <label class="checkbox column" for="frappe">
+      <input class="input" type="checkbox" name="frappe" id="frappe">
+      <div class="box"></div>
+      Frappe
+    </label>
+    <label class="checkbox column" for="greekcoffee">
+      <input class="input" type="checkbox" name="greekcoffee" id="greekcoffee">
+      <div class="box"></div>
+      Greek Coffee
+    </label>
+    <label class="checkbox column" for="madras">
+      <input class="input" type="checkbox" name="madras" id="madras">
+      <div class="box"></div>
+      Indian (Madras) filter coffee
+    </label>
+    <label class="checkbox column" for="instantcoffee">
+      <input class="input" type="checkbox" name="instantcoffee" id="instantcoffee">
+      <div class="box"></div>
+      Instant Coffee
+    </label>
+    <label class="checkbox column" for="shot">
+      <input class="input" type="checkbox" name="shot" id="shot">
+      <div class="box"></div>
+      Shot in the Dark
+    </label>
+    <label class="checkbox column" for="icedcoffee">
+      <input class="input" type="checkbox" name="icedcoffee" id="icedcoffee">
+      <div class="box"></div>
+      Iced Coffee
+    </label>
+    <label class="checkbox column" for="cubancoffee">
+      <input class="input" type="checkbox" name="cubancoffee" id="cubancoffee">
+      <div class="box"></div>
+      Cuban Coffee
+    </label>
+    <label class="checkbox column" for="arabiccoffee">
+      <input class="input" type="checkbox" name="arabiccoffee" id="arabiccoffee">
+      <div class="box"></div>
+      Arabic Coffee
+    </label>
+    <label class="checkbox column" for="irishcoffee">
+      <input class="input" type="checkbox" name="irishcoffee" id="irishcoffee">
+      <div class="box"></div>
+      Irish Coffee
+    </label>
+    <label class="checkbox column" for="kopitubruk">
+      <input class="input" type="checkbox" name="kopitubruk" id="kopitubruk">
+      <div class="box"></div>
+      Kopi Tubruk
+    </label>
+    <label class="checkbox column" for="lungo">
+      <input class="input" type="checkbox" name="lungo" id="lungo">
+      <div class="box"></div>
+      Lungo
+    </label>
+    <label class="checkbox column" for="ristretto">
+      <input class="input" type="checkbox" name="ristretto" id="ristretto">
+      <div class="box"></div>
+      Ristretto
+    </label>
+    <label class="checkbox column" for="melya">
+      <input class="input" type="checkbox" name="melya" id="melya">
+      <div class="box"></div>
+      Melya
+    </label>
+    <label class="checkbox column" for="vietnamesecoffee">
+      <input class="input" type="checkbox" name="vietnamesecoffee" id="vietnamesecoffee">
+      <div class="box"></div>
+      Vietnamese Coffee
+    </label>
+    </div>
+   </div>
+   <hr>
+   <div class="form-group">
+    <p id="question">Any comments or suggestions.<br><span>(Write down below)</span></p>
+    <textarea class="textarea" placeholder="Please enter your comments or suggestions here"></textarea>
+   </div>
+   <div>
+    <input id="submit" type="submit" value="Submit">
+   </div>
+  </form>
+ </main>
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+/*start of placing backgound image and setting stting it up*/
+html {
+ background-image: url(./images/School\ of\ Kio\ fish.jpg);
+ background-size: 740px 1320px;
+ background-position: center;
+ background-repeat: no-repeat;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 15px;
+}
+/*end of placing backgound image and setting stting it up*/
+
+/*start of setting up the body color of the web page*/
+body {
+ background-color: bisque;
+ background-position: center;
+ height: 1200px;
+ width: 600px;
+ margin: 60px auto;
+ border: 5px outset #ff4d00;
+}
+/*end of setting up the body color of the web page*/
+
+/*start of putting logo a orange backgound color*/
+.background {
+ background-color: #ff7400;
+ width: 600px;
+ height: 130px;
+}
+
+#logo {
+ margin: 5px 65px;
+}
+/*end of putting logo a orange background color*/
+
+/*start of body (text) setup*/
+main {
+ text-align: left;
+ margin: 20px;
+}
+
+hr {
+  background-color: #ff0000;
+  border: solid #ff0000;
+  padding: 0;
+  margin: 15px;
+}
+
+.info {
+ display: inline-block;
+ width: 140px;
+}
+
+#title,
+#description {
+ margin: 3px;
+}
+
+h1 {
+ text-transform: uppercase;
+ font-size: 30px;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ color: #ff4d00;
+}
+
+span {
+ font-size: 13px;
+ font-style: italic;
+ font-weight: normal;
+}
+
+#question {
+ font-weight: bold;
+}
+/*end of body (text) setup*/
+
+/*start of table (checkbox) for coffee flavor*/
+
+.form-group{
+ margin: 10px;
+}
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.checkbox {
+ display: inline-flex;
+ align-items: center;
+ cursor: pointer;
+}
+
+.input {
+ display:none;
+}
+
+.box {
+ width: .75em;
+ height: .75em;
+ border: 2px solid #909090;
+ border-radius: 4px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-right: 10px;
+ flex-shrink: 0;
+ transition: background 0.15s, border-color 0.15s;
+}
+
+.box::after {
+ content: '\2714';
+ color: #fff;
+ transform: scale(0);
+ transition: transform 0.15s;
+}
+
+.input:checked + .box {
+  background: #2266dc;
+  border-color: #2266dc;
+}
+
+.input:checked+.box::after {
+ transform: scale(1);
+}
+/*end of table (checkbox) for coffee flavor*/
+
+/*start of submit botton setup*/
+#submit {
+  display: block;
+  width: 20%;
+  margin: 1em auto;
+  height: 2em;
+  background-color: rgb(252, 212, 140);
+  border-color: orange;
+  min-width: 100px;
+  border-radius: 10px 0px 10px 0px;
+}
+/*end of submit botton setup*/
+
+/*start of setting up textarea*/
+.textarea {
+ background-color: #ddd;
+ color: #666666;
+ padding: 1em;
+ border-radius: 10px;
+ border: 2px solid transparent;
+ outline: none;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 15px;
+ width: 500px;
+ height: 70px;
+ transition: all 0.2s;
+ resize: none;
+}
+
+.textarea:hover {
+ cursor: pointer;
+ background-color: #eee;
+}
+
+.textarea:focus {
+ cursor: text;
+ color: #333;
+ background-color: white;
+ border-color: #333;
+}
+/*end of setting up textarea*/
